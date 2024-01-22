@@ -1,0 +1,73 @@
+@charset "UTF-8";
+// Fonts
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "~bootstrap/scss/bootstrap";
+
+// Normalize
+// ―― » Container
+html,
+body {
+    font-size: 100%;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+
+    // ―― » Better Font Rendering
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+button,
+input {
+    outline-style: none;
+    box-shadow: none;
+
+    &:focus {
+        outline-style: none;
+        outline: none;
+    }
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    outline: none;
+    color: black;
+}
+
+textarea {
+    min-height: 50px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+figure {
+    margin: 0;
+}
